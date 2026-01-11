@@ -15,7 +15,7 @@ This is a full-stack User Management System that allows you to perform *CRUD ope
 <b>Delete Users</b>:
   Delete any user from the database with a single click.
 
-<b>User Count API</b>
+<b>User Count API</b>:
   API endpoint to fetch the total number of users in the database.
 
 Dynamic Pages with EJS:
