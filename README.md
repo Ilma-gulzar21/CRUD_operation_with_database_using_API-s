@@ -6,19 +6,19 @@ This is a full-stack User Management System that allows you to perform *CRUD ope
 <b>View Users:</b>
   See all users with their name, email, and username on a dynamic page.
 
-<b>Add Users</b>
+<b>Add Users</b>:
   Add a new user to the database with a username, email, and password.
 
-<b> Edit Users</b>
+<b> Edit Users</b>:
   Update a user's **username** based on their **email**. Updates are allowed only if the correct password is provided. Incorrect passwords trigger a **notification**.
 
-<b>Delete Users</b>
+<b>Delete Users</b>:
   Delete any user from the database with a single click.
 
 <b>User Count API</b>
   API endpoint to fetch the total number of users in the database.
 
-* **Dynamic Pages with EJS:**
+Dynamic Pages with EJS:
   All pages are rendered using EJS templates, making the interface interactive and professional.
 
 <b>Notifications:</b>
