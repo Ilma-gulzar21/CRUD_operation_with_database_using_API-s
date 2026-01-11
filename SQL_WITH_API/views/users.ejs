@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>User Data</title>
+    <link rel="stylesheet" href="/style2.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>User Database Records</h1>
+        
+        <form method="get" action="/users/add">
+            <button id="btn">
+                <span>Add User</span>
+            </button>
+        </form>
+
+
+        <div class="table-wrapper">
+            <table>
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Username</th>
+                        <th>Email</th>
+                        <th>Update</th>
+                        <th>Delete</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <% if (result.length === 0) { %>
+                        <tr>
+                            <td colspan="5" class="no-data">No Data Found</td>
+                        </tr>
+                    <% } %>
+
+                    <% result.forEach(user => { %>
+                        <tr>
+                            <td><%= user.id %></td>
+                            <td><%= user.username %></td>
+                            <td><%= user.email %></td>
+                            <td>
+                                <form method="get" action="/users/<%= user.id %>/edit">
+                                    <button class="btns edit-btn">Edit</button>
+                                </form>
+                            </td>
+                            <td>
+                                <form method="post" action="/users/<%= user.id %>?_method=DELETE" onsubmit="return confirm('Are you sure you want to delete this user?');">
+                                    <button class="btns delete-btn" type="submit">Delete</button>
+                                </form>
+                            </td>
+                        </tr>
+                    <% }) %>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+</body>
+</html>

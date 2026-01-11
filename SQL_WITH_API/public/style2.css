@@ -1,0 +1,157 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", sans-serif;
+}
+
+body {
+    background: linear-gradient(120deg, #e0eafc, #cfdef3);
+    min-height: 100vh;
+    padding: 20px;
+}
+.container {
+    max-width: 1100px;
+    margin: auto;
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 14px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+}
+
+.container h1 {
+    text-align: center;
+    margin-bottom: 25px;
+    color: #333;
+    font-size: 32px;
+}
+#btn {
+    background: #4f46e5;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 600;
+    border-radius: 10px;
+    padding: 12px 20px;
+    width: 100%;
+    margin-bottom: 20px;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16);
+}
+
+#btn:hover {
+    background-color: #764ba2;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.2);
+}
+
+.table-wrapper {
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    border-radius: 10px;
+    min-width: 600px;
+}
+
+thead {
+    background: #4f46e5;
+    color: #fff;
+}
+
+thead th {
+    padding: 15px;
+    text-align: left;
+    font-size: 16px;
+}
+
+tbody tr {
+    border-bottom: 1px solid #ddd;
+    transition: background 0.3s ease;
+}
+
+tbody tr:hover {
+    background: #f1f5ff;
+}
+
+tbody td {
+    padding: 12px 15px;
+    font-size: 15px;
+    color: #333;
+}
+
+.no-data {
+    text-align: center;
+    padding: 20px;
+    font-size: 18px;
+    color: #999;
+}
+
+.btns {
+    padding: 8px 14px;
+    font-weight: 600;
+    border-radius: 8px;
+    cursor: pointer;
+    border: none;
+    transition: all 0.3s ease;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16);
+    font-size: 14px;
+}
+.edit-btn {
+    background-color: #22c55e;  
+    color: white;
+}
+.edit-btn:hover {
+    background-color: #16a34a;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.2);
+}
+
+.delete-btn {
+    background-color: #ef4444; 
+    color: white;
+}
+.delete-btn:hover {
+    background-color: #dc2626;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.2);
+}
+
+
+@media (max-width: 900px) {
+    table {
+        font-size: 14px;
+    }
+
+    .btns {
+        padding: 6px 10px;
+        font-size: 13px;
+    }
+
+    #btn {
+        font-size: 16px;
+        padding: 10px;
+    }
+}
+
+@media (max-width: 600px) {
+    .container {
+        padding: 20px;
+    }
+
+    #btn {
+        font-size: 15px;
+        padding: 8px;
+    }
+
+    table {
+        min-width: unset;
+    }
+
+    tbody td {
+        padding: 10px 8px;
+    }
+}

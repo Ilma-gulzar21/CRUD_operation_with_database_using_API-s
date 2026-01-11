@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Add New User</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/style5.css">
+</head>
+<body>
+
+  <div class="page">
+    <div class="form-card">
+      <h2>Add New User</h2>
+
+      <form method="POST" action="/users/add" autocomplete="off">
+
+        <div class="form-group">
+          <label>Username</label>
+          <input type="text" name="username" placeholder="Enter username" autocomplete="off" required>
+        </div>
+
+        <div class="form-group">
+          <label>Email</label>
+          <input type="email" name="email" placeholder="Enter email" autocomplete="off" required>
+        </div>
+
+        <div class="form-group">
+          <label>Password</label>
+          <input type="password" name="password" placeholder="Enter password" autocomplete="new-password" required>
+        </div>
+
+        <div class="form-group">
+          <label>Confirm Password</label>
+          <input type="password" name="confirmPassword" placeholder="Re-enter password" autocomplete="new-password" required>
+        </div>
+
+        <button type="submit" class="btn">Add User</button>
+
+      </form>
+    </div>
+  </div>
+
+</body>
+</html>
