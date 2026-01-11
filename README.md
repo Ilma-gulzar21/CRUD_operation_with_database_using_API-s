@@ -1,6 +1,6 @@
 # User Management CRUD Application
 
-This is a full-stack User Management System that allows you to perform *CRUD operations* (Create, Read, Update, Delete) on users in a MySQL database** using Node.js, Express,EJS, and RESTful APIs. The application provides a user-friendly interface where you can add, edit, delete, and view users, with password verification for secure updates.
+This is a full-stack User Management System that allows you to perform *CRUD operations* (Create, Read, Update, Delete) on users in a MySQL database using Node.js, Express,EJS, and RESTful APIs. The application provides a user-friendly interface where you can add, edit, delete, and view users, with password verification for secure updates.
 
 ## Features
 <b>View Users:</b>
@@ -23,13 +23,3 @@ Dynamic Pages with EJS:
 
 <b>Notifications:</b>
   Password validation ensures secure updates, and users are notified if an action fails.
-
-## Technologies Used
-
-<b> Node.j</b>: JavaScript runtime for backend
-<b> Express.js </b> : Web framework for building APIs
-<b>MySQ<\b>: Relational database to store user data
-<b>EJS </b> :Templating engine for dynamic frontend pages
-<b> CSS</b>: Styling for professional and attractive UI
-<b>RESTful APIs</b>: For all CRUD operations 
-|
